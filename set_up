@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Sets up an arbitrary file system for our demo.
+# Will probably come back and add some other stuff to this.
+
+# Makes main directory.
+mkdir rapido_bank
+cd rapido_bank
+
+mkdir Admin
+mkdir Finance
+mkdir Services
+mkdir IT
+
+cd Admin
+mkdir Personnel 
+mkdir Resources
+
+cd ..
+
+cd Finance
+mkdir Budget
+
+cd ..
+
+cd Services
+mkdir Accounts
+
+cd ..
+
+cd IT 
+mkdir Security
+
+
+# Adding another random folder.
+mkdir secret_shared_dir
