@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Sets up an arbitrary file system for our demo.
+# Will probably come back and add some other stuff to this.
+
+# Makes main directory.
+mkdir rapido_bank
+cd rapido_bank
+
+mkdir Admin
+mkdir Finance
+mkdir Services
+mkdir IT
+
+cd Admin
+mkdir Personnel 
+echo "Monte Hall /n Alan Richardson /n John Hason /n Selena Quaid" Executives.txt
+echo "Cole Farmin /n Helena Stevenson /n Simon Keyes" Management.txt
+echo "Aaron Jameson /n Kelly Kline /n Marianna Hoytema /n Matilda Carlton" Services_staff.txt
+echo "Oliver Charles /n Timothy Hall /n Alexa Simmons" InternalIT_staff.txt
+echo "Rachael Cook /n James Beech" ExternalIT_staff.txt
+echo "Mason Clarke /n Karina Barton" Finance_staff.txt
+mkdir Resources
+
+cd ..
+
+cd Finance
+mkdir Budget
+
+cd ..
+
+cd Services
+mkdir Accounts
+
+cd ..
+
+cd IT 
+mkdir Security
+
+
+# Adding another random folder.
+mkdir secret_shared_dir
