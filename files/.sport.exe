@@ -1,0 +1,20 @@
+MZ
+import socket
+
+def establish_connection(host, port):
+    try:
+        # Create a TCP socket
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            # Connect to the server
+            s.connect((host, port))
+    except ConnectionRefusedError:
+        return 
+    except Exception as e:
+        return
+
+# Specify the host and port to connect to
+host = "example.com"
+port = 80  # For example, port 80 for HTTP
+
+# Call the function to establish the connection
+establish_connection(host, port)
